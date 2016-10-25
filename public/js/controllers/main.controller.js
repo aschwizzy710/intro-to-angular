@@ -2,7 +2,7 @@
   angular.module('intro') //setter syntax --> starts the application
   .controller('MainController', MainController);
 
-MainController.$inject = ['$scope', 'TodoService']; // what tools the MainController function needs
+MainController.$inject = ['$scope', 'TodoService']; // what tools the Main Controller function needs
 
 function MainController($scope, TodoService){ // $scope is our bridge to the dom
   $scope.todos = TodoService.get();
