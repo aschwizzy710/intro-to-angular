@@ -10,7 +10,7 @@ function MainController($scope, TodoService){ // $scope is our bridge to the dom
 
   function createTodo(newTodo){
     TodoService.create(newTodo);
-    $scope.newTodo = {};
+    $scope.newTodo = '';
   }
 }
 }());
